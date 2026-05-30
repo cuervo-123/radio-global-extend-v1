@@ -303,21 +303,22 @@
     align-items:center;
     justify-content:center;
     pointer-events:none;
-    opacity: var(--cuervo-opacity);
-    mix-blend-mode: normal;
+
+    opacity:1;
+
     filter:
       contrast(1.10)
       saturate(1.25)
-      drop-shadow(0 0 calc(var(--cuervo-glow)*1px) rgba(200, 18, 197, .70))
+      drop-shadow(0 0 calc(var(--cuervo-glow)*1px) rgba(200,18,197,.70))
       drop-shadow(0 0 18px rgba(31,139,255,.18));
-    transform: translateY(4px);
-    animation: cuervoBreath 3.0s ease-in-out infinite;
-  }
+
+    animation:cuervoBreath 3s ease-in-out infinite;
+}
 
   /* ✅ LOGO MÁS PEQUEÑO (y con límite) */
-  .cuervo-lava img{
-    width:140px;
-    opacity:.75;
+ .cuervo-lava img{
+    width:220px;
+    opacity:.85;
 }
   @keyframes cuervoBreath{ 0%,100%{ transform: scale(0.99); } 50%{ transform: scale(1.04); } }
 
